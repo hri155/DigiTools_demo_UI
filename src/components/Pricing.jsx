@@ -9,7 +9,7 @@ const Pricing=()=>{
        </div>
     
        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4">
-        <div className=" card w-full max-w-sm mx-auto bg-[#f2f2f2] shadow-sm px-4 py-2.5">
+        <div className="card relative w-full max-w-sm mx-auto shadow-sm bg-linear-to-r from-[#4f39f6] via-[#6a5af9] to-[#8b5cf6] px-4 py-2.5">
         <h2 className="text-2xl text-black font-semibold">Starter</h2>
         <p className="text-[#627382]">Perfect for getting started</p>
         <span className="text-2xl font-bold mt-5">$0<span className="text-[#627382] text-xl font-light">/month</span></span>
@@ -37,7 +37,7 @@ const Pricing=()=>{
     </div>
 
     <div className="card w-full max-w-sm mx-auto bg-[#f2f2f2]-100 shadow-sm bg-linear-to-r from-[#4f39f6] via-[#6a5af9] to-[#8b5cf6] px-4 py-2.5">
-        <span className="badge badge-xs badge-soft badge-warning absolute bottom-89 right-43">Most Popular</span>
+        <span className="badge badge-xs badge-soft badge-warning absolute top-4 right-4">Most Popular</span>
          <h2 className="text-2xl text-white font-semibold">Pro</h2>
          <p className=" text-white">Best for professionals</p>
          <span className="text-2xl  text-white font-bold mt-5">$29<span className="text-white text-xl font-light">/month</span></span>

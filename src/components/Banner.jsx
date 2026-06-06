@@ -7,7 +7,7 @@ const Banner = () => {
         <div className="hero-content flex-col lg:flex-row-reverse gap-8 lg:gap-16 max-w-7xl mx-auto px-4">
         <img
         src={banner} alt="banner"
-        className="w-full max-w-sm rounded-lg shadow-2xl"
+       className="w-full max-w-md lg:max-w-xl rounded-lg"
         />
         <div>
         <h4>
@@ -17,7 +17,9 @@ const Banner = () => {
         </span>
         </h4>
         <br/>
-        <h1 className="text-3xl md:text-5xl font-bold">Supercharge Your<br></br>Digital Workflow</h1>
+       <h1 className="text-3xl md:text-5xl leading-tight font-bold">
+          Supercharge Your Digital Workflow
+        </h1>
         <p className="py-6 text-[#627382]">
        Access premium AI tools, design assets, templates, and productivity
        software—all in one place. Start creating faster today.

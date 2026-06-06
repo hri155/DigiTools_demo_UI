@@ -15,11 +15,11 @@ const Products = ({
         <h1 className="text-3xl text-black font-bold">Premium Digital Tools</h1>
 
         <p className="text-[#627382]">
-          Choose from our curated collection of premium digital products designed<br />
+          Choose from our curated collection of premium digital products designed
           to boost your productivity and creativity.
         </p>
 
-        <div className="inline-flex px-2 py-1.5 gap-4">
+        <div className="flex flex-col sm:flex-row justify-center px-2 py-1.5 gap-4">
           <button
             onClick={() => setShowCart(false)}
             className={`btn rounded-full ${

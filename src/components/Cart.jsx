@@ -36,7 +36,7 @@ const total = carts.reduce((sum, item) => sum + item.price, 0);
 
           <button
             onClick={handleCheckout}
-            className="btn  bg-linear-to-r from-[#4f39f6] via-[#6a5af9] to-[#8b5cf6] text-white w-full rounded-full"
+            className="btn  bg-gradient-to-r from-[#4f39f6] via-[#6a5af9] to-[#8b5cf6] text-white w-full rounded-full"
           >
             Proceed to Checkout
           </button>

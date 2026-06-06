@@ -44,7 +44,7 @@ const ToolsCard = ({ carts = [], handleAddToCart }) => {
 
             <div className="card-actions mt-4">
                  <button onClick={() => handleAddToCart(tool)}
-                    className="btn bg-linear-to-r from-[#4f39f6] via-[#6a5af9] to-[#8b5cf6] text-white rounded-full w-full"
+                    className="btn bg-gradient-to-r from-[#4f39f6] via-[#6a5af9] to-[#8b5cf6] text-white rounded-full w-full"
                     >
                     Buy Now
                     </button>

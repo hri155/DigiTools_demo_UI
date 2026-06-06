@@ -7,7 +7,7 @@ const Explore = () => {
                    Start your free trial today.
                 </p>
             </div>
-            <div className="inline-flex gap-4 mt-5 items-center">
+            <div className="flex flex-col sm:flex-row gap-4 mt-5 items-center justify-center">
                 <button className="btn  text-[#4f39f6] via-[#6a5af9] to-[#8b5cf6] rounded-full">Explore Products</button>
                 <button className="btn bg-transparent border text-white rounded-full ">View Pricing</button>
             </div>

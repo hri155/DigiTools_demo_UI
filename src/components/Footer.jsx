@@ -4,8 +4,8 @@ import twitter from "../assets/twitter.svg";
 
 const Footer = () => {
     return(
-        <div className=" bg-[#101727] px-16 py-10">
-        <footer className="footer sm:footer-horizontal text-base-content ">
+        <div className="bg-[#101727] px-4 md:px-10 py-10">
+        <footer className="footer flex flex-col md:flex-row text-base-content gap-10">
     <aside>
        <h1 className="text-4xl text-white font-bold py-4">DigiTools</h1>
         <p className="text-white">
