@@ -1,118 +1,135 @@
+const CheckIcon = ({ light = false }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className={`w-4 h-4 shrink-0 ${light ? "text-green-300" : "text-green-500"}`}
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      d="M5 13l4 4L19 7"
+    />
+  </svg>
+);
 
-const Pricing=()=>{
+const Pricing = () => {
+  return (
+    <section className="mt-20 px-4 md:px-8 lg:px-12">
+      <div className="text-center mb-10">
+        <h1 className="text-3xl md:text-4xl text-black font-bold">
+          Simple, Transparent Pricing
+        </h1>
+        <p className="mt-3 text-sm md:text-base text-[#627382]">
+          Choose the plan that fits your needs. Upgrade or downgrade anytime.
+        </p>
+      </div>
 
-  return(
-    <div className="mt-20 space-y-6">
-        <div className="text-center space-y-4">
-         <h1 className="text-black text-4xl font-bold">Simple, Transparent Pricing</h1>
-        <p>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
-       </div>
-    
-       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4">
-        <div className="card relative w-full max-w-sm mx-auto shadow-sm bg-linear-to-r from-[#4f39f6] via-[#6a5af9] to-[#8b5cf6] px-4 py-2.5">
-        <h2 className="text-2xl text-black font-semibold">Starter</h2>
-        <p className="text-[#627382]">Perfect for getting started</p>
-        <span className="text-2xl font-bold mt-5">$0<span className="text-[#627382] text-xl font-light">/month</span></span>
-        <ul className="mt-6 flex flex-col gap-2 text-xs">
-        <li>
-            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-[#627382]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-            <span>Access to 10 free tools</span>
-        </li>
-        <li>
-            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-[#627382]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-            <span>Basic templates</span>
-        </li>
-        <li>
-            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-[#627382]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-            <span>Community support</span>
-        </li>
-        <li>
-            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-[#627382]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-            <span>1 project per month</span>
-        </li>
-        </ul>
-        <div className="mt-18 ml-5 mr-5">
-        <button className="btn bg-linear-to-r from-[#4f39f6] via-[#6a5af9] to-[#8b5cf6] text-white rounded-full w-full">Get Started Free</button>
-        </div>
-    </div>
-
-    <div className="card w-full max-w-sm mx-auto bg-[#f2f2f2]-100 shadow-sm bg-linear-to-r from-[#4f39f6] via-[#6a5af9] to-[#8b5cf6] px-4 py-2.5">
-        <span className="badge badge-xs badge-soft badge-warning absolute top-4 right-4">Most Popular</span>
-         <h2 className="text-2xl text-white font-semibold">Pro</h2>
-         <p className=" text-white">Best for professionals</p>
-         <span className="text-2xl  text-white font-bold mt-5">$29<span className="text-white text-xl font-light">/month</span></span>
-        <ul className="mt-6 flex flex-col gap-2 text-xs">
-        <li>
-            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-            <span className=" text-white">Access to all premium tools</span>
-        </li>
-        <li>
-            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-            <span className=" text-white">Unlimited templates</span>
-        </li>
-        <li>
-            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-            <span className=" text-white">Priority support</span>
-        </li>
-        <li>
-            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-            <span className=" text-white">Unlimited projects</span>
-        </li>
-        <li>
-            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-            <span className=" text-white">Cloud sync</span>
-        </li>
-        <li>
-            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-            <span className=" text-white">Advanced analytics</span>
-        </li>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
-        </ul>
-        <div className="mt-6 ml-5 mr-5">
-        <button className="btn btn-block rounded-full text-[#4f39f6] via-[#6a5af9] to-[#8b5cf6]">Start Pro Trial</button>
+        <div className="card w-full max-w-sm mx-auto bg-white border border-gray-200 shadow-sm p-6">
+          <h2 className="text-2xl text-black font-semibold">Starter</h2>
+          <p className="mt-2 text-sm text-[#627382]">
+            Perfect for getting started
+          </p>
+
+          <div className="mt-6 text-4xl font-bold text-black">
+            $0<span className="text-base font-normal text-[#627382]">/month</span>
+          </div>
+
+          <ul className="mt-6 space-y-3 text-sm text-[#1f2937]">
+            {[
+              "Access to 10 free tools",
+              "Basic templates",
+              "Community support",
+              "1 project per month",
+            ].map((item) => (
+              <li key={item} className="flex items-center gap-2">
+                <CheckIcon />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-auto pt-10">
+            <button className="btn w-full rounded-full border-0 bg-linear-to-r from-[#4f39f6] to-[#a21caf] text-white">
+              Get Started Free
+            </button>
+          </div>
         </div>
-    </div>
 
-        <div className="card w-full max-w-sm mx-auto bg-[#f2f2f2] shadow-sm px-4 py-2.5">
-         <h2 className="text-2xl text-black font-semibold">Enterprise</h2>
-         <p className="text-[#627382]">For teams and businesses</p>
-         <span className="text-2xl font-bold mt-5">$99<span className="text-[#627382] text-xl font-light">/month</span></span>
+        <div className="card relative w-full max-w-sm mx-auto border-0 shadow-sm p-6 bg-linear-to-r from-[#4f39f6] via-[#6a5af9] to-[#a21caf] text-white">
+          <span className="badge badge-warning badge-sm absolute -top-3 left-1/2 -translate-x-1/2">
+            Most Popular
+          </span>
 
-        <ul className="mt-6 flex flex-col gap-2 text-xs">
-        <li>
-            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-[#627382]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-            <span>Everything in Pro</span>
-        </li>
-        <li>
-            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-[#627382]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-            <span>Team collaboration</span>
-        </li>
-        <li>
-            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-[#627382]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-            <span>Custom integrations</span>
-        </li>
-        <li>
-            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-[#627382]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-            <span>Dedicated support</span>
-        </li>
-        <li>
-            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-[#627382]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-            <span>SLA guarantee</span>
-        </li>
-        <li>
-            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-[#627382]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-            <span>Custom branding</span>
-        </li>
+          <h2 className="text-2xl font-semibold">Pro</h2>
+          <p className="mt-2 text-sm text-white/80">Best for professionals</p>
 
-        </ul>
-        <div className="mt-6 ml-5 mr-5">
-        <button className="btn  bg-linear-to-r from-[#4f39f6] via-[#6a5af9] to-[#8b5cf6] text-white rounded-full w-full">Contact Sales</button>
+          <div className="mt-6 text-4xl font-bold">
+            $29<span className="text-base font-normal text-white/80">/month</span>
+          </div>
+
+          <ul className="mt-6 space-y-3 text-sm">
+            {[
+              "Access to all premium tools",
+              "Unlimited templates",
+              "Priority support",
+              "Unlimited projects",
+              "Cloud sync",
+              "Advanced analytics",
+            ].map((item) => (
+              <li key={item} className="flex items-center gap-2">
+                <CheckIcon light />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-auto pt-10">
+            <button className="btn w-full rounded-full bg-white border-0 text-[#4f39f6]">
+              Start Pro Trial
+            </button>
+          </div>
         </div>
-    </div>
-    </div>
-</div>
 
-    );
+        <div className="card w-full max-w-sm mx-auto bg-white border border-gray-200 shadow-sm p-6">
+          <h2 className="text-2xl text-black font-semibold">Enterprise</h2>
+          <p className="mt-2 text-sm text-[#627382]">
+            For teams and businesses
+          </p>
+
+          <div className="mt-6 text-4xl font-bold text-black">
+            $99<span className="text-base font-normal text-[#627382]">/month</span>
+          </div>
+
+          <ul className="mt-6 space-y-3 text-sm text-[#1f2937]">
+            {[
+              "Everything in Pro",
+              "Team collaboration",
+              "Custom integrations",
+              "Dedicated support",
+              "SLA guarantee",
+              "Custom branding",
+            ].map((item) => (
+              <li key={item} className="flex items-center gap-2">
+                <CheckIcon />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-auto pt-10">
+            <button className="btn w-full rounded-full border-0 bg-linear-to-r from-[#4f39f6] to-[#a21caf] text-white">
+              Contact Sales
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
+
 export default Pricing;
- 

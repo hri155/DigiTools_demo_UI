@@ -3,61 +3,82 @@ import facebook from "../assets/facebook.svg";
 import twitter from "../assets/twitter.svg";
 
 const Footer = () => {
-    return(
-        <div className="bg-[#101727] px-4 md:px-10 py-10">
-        <footer className="footer flex flex-col md:flex-row text-base-content gap-10">
-    <aside>
-       <h1 className="text-4xl text-white font-bold py-4">DigiTools</h1>
-        <p className="text-white">
-        Premium digital tools for creators, <br/>
-        professionals, and businesses. Work smarter <br/>
-         with our suite of powerful tools.
-        </p>
-    </aside>
-    <nav className="text-white">
-        <h6 className="footer-title">Product</h6>
-        <a className="link link-hover">Features</a>
-        <a className="link link-hover">Pricing</a>
-        <a className="link link-hover">Templates</a>
-        <a className="link link-hover">Integrations</a>
-    </nav>
-    <nav className="text-white">
-        <h6 className="footer-title">Company</h6>
-        <a className="link link-hover">About</a>
-        <a className="link link-hover">Blog</a>
-        <a className="link link-hover">Careers</a>
-        <a className="link link-hover">Press</a>
-    </nav>
-    <nav className="text-white">
-        <h6 className="footer-title">Resources</h6>
-        <a className="link link-hover">Documentation</a>
-        <a className="link link-hover">Help Center</a>
-        <a className="link link-hover">Community</a>
-        <a className="link link-hover">Contact</a>
-    </nav>
-    <nav className="text-white">
-    <h6 className="footer-title">Social</h6>
-    <div className="grid grid-flow-col gap-4">
-      <img src={instagram} className="w-8"/>
-      <img src={facebook} className="w-8"/>
-      <img src={twitter} className="w-8"/>
-    </div>
-  </nav>
+  return (
+    <footer className="bg-[#101727] text-white mt-20">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 py-16">
+
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
+
+          <div className="md:col-span-1">
+            <h1 className="text-4xl font-bold mb-4">DigiTools</h1>
+
+            <p className="text-gray-300 text-sm leading-6">
+              Premium digital tools for creators,
+              professionals, and businesses. Work smarter
+              with our suite of powerful tools.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-semibold mb-4">Product</h3>
+
+            <ul className="space-y-2 text-gray-300 text-sm">
+              <li><a className="hover:text-white">Features</a></li>
+              <li><a className="hover:text-white">Pricing</a></li>
+              <li><a className="hover:text-white">Templates</a></li>
+              <li><a className="hover:text-white">Integrations</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold mb-4">Company</h3>
+
+            <ul className="space-y-2 text-gray-300 text-sm">
+              <li><a className="hover:text-white">About</a></li>
+              <li><a className="hover:text-white">Blog</a></li>
+              <li><a className="hover:text-white">Careers</a></li>
+              <li><a className="hover:text-white">Press</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold mb-4">Resources</h3>
+
+            <ul className="space-y-2 text-gray-300 text-sm">
+              <li><a className="hover:text-white">Documentation</a></li>
+              <li><a className="hover:text-white">Help Center</a></li>
+              <li><a className="hover:text-white">Community</a></li>
+              <li><a className="hover:text-white">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold mb-4">Social Links</h3>
+
+            <div className="flex gap-3">
+              <img src={instagram} alt="Instagram" className="w-8 h-8 cursor-pointer" />
+              <img src={facebook} alt="Facebook" className="w-8 h-8 cursor-pointer" />
+              <img src={twitter} alt="Twitter" className="w-8 h-8 cursor-pointer" />
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-gray-700 my-10"></div>
+
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
+
+          <p>© 2026 DigiTools. All rights reserved.</p>
+
+          <div className="flex gap-6">
+            <a className="hover:text-white">Privacy Policy</a>
+            <a className="hover:text-white">Terms of Service</a>
+            <a className="hover:text-white">Cookies</a>
+          </div>
+
+        </div>
+      </div>
     </footer>
-
-    <footer className="footer sm:footer-horizontal bg-[#101727] text-[#fafafa] items-center p-4">
-   <aside className="grid-flow-col items-center mt-15">
-    <p>© 2026 Digitools. All rights reserved.</p>
-  </aside>
-  <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end mt-15 text-[#fafafa]">
-    <a>Privacy Policy</a>
-    <a>Terms of Service</a>
-    <a>Cookies</a>
-  </nav>
-</footer>
-            
- </div>
-
- );
+  );
 };
+
 export default Footer;
